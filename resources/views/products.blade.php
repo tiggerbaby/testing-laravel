@@ -6,7 +6,8 @@
      <h2>Latest prducts</h2>
 {{-- @foreach ($popProds as $product) --}}
        @foreach($products as $product)
-       <p>{{$product['name']}} at {{$product['price']}} each</p>
+       <p>{{$product->name}} at {{$product->price}} 
+       each and there are {{$product->stock}} on stock.</p>
     @endforeach
     
    <h2>What's hot right now</h2>
