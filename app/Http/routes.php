@@ -27,7 +27,14 @@ Route::post('contentform',function(){
 	return "Send Contact Form";
 });
 
+// Product Page
 Route::get('products','ProductsController@index');
+Route::get('products/create','ProductsController@create')->middleware('web');
+Route::post('products/store','ProductsController@store')->middleware('web');
+Route::get('products/{id}','ProductsController@show');
+Route::get('products/{id}/edit','ProductsController@edit')->middleware('web');
+Route::post('products/{id}/edit','ProductsController@update')->middleware('web');
+
 
 /*
 |--------------------------------------------------------------------------
