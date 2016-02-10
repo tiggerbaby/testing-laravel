@@ -5,6 +5,7 @@
 	<title></title>
 </head>
 <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 <body>
 <div class="container">
    <nav>
